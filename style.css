@@ -1,12 +1,128 @@
 body{
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
 }
-section.intro{
-    width: 100%;
+.page-wrapper{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+
+    
+}
+.intro{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: url('bg-main.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height:100vh;
-    background-color: rgba(0,0,0,.5)
+    align-content:center;
+}
+.intro:before{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,.6);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+header {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns:1fr;
+    align-content:center;
+    text-align: center;
+    color: #fff;
+    z-index: 2
+    
 }
 header h1{
     margin: 0;
+    padding: 10px;
+    font-size:84px;
+    }
+    
+header h2{
+    padding: 5px;
+    font-size:27px;
+}
+.intro div{
+    margin-right: 20px;
+    background-color: rgba(0,0,0,.5);
+    border:5px solid #039BBC;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px 4px white;
+    z-index: 2;
+    
+}
+.summary{
+    margin-bottom: 20px;
+    
+    
+}
+.preamble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.preamble>h3{
+    grid-column:1/3;
+    }
+.preamble p:first-of-type{
+    grid-column:1/3;
+}
+#zen-supporting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-left: 10px;
+    
+}
+
+.explanation{
+    padding: 25px 15px 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+}
+.explanation h3{
+    text-align: center;
+}
+
+.participation{
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+    padding: 25px;
+}
+
+.participation h3{
+    text-align:center;
+}
+.benefits{
+    grid-column:1/3;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+    padding: 15px;
+}
+.requirements{
+    grid-column:1/3;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+    padding: 15px;
+}
+footer{
+    grid-column:1/3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+.sidebar{
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+    padding: 15px;
+    
 }
