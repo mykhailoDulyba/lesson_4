@@ -351,6 +351,7 @@ footer a:hover {
     header h2 {
         font-size: 12px;
     }
+    
     .main {
         grid-column: 1/3;
     }
